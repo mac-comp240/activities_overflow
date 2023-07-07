@@ -1,11 +1,11 @@
-# Activity 5
+# Activity 6
 
 CC=gcc -std=c99
 
-all: twos_comp
+all: overfl
 
-twos_comp: test_tc.c binary_convert.c
-	${CC} -o twos_comp test_tc.c binary_convert.c
+overfl: check_overflow.c
+	${CC} -o overfl check_overflow.c
 
 clean:
-	rm -f twos_comp
+	rm -f overfl
