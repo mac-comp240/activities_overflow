@@ -1,4 +1,5 @@
 # Activity 6: Binary Arithmetic and Overflow
+## Put your name(s) here
 
 In this activity, you are will experiment with ways to detect when overflow has happened with signed integers.
 - You will examine how to check for two unsigned integers overflowing when added
@@ -9,11 +10,11 @@ In this activity, you are will experiment with ways to detect when overflow has 
 
 ## Disclaimer!
 
-_What we do here is not the approved method for checking for overflow!!_
+__What we do here is not the approved method for checking for overflow!!__
 
 - The C programming language does not specify what happens when an arithmetic expression involving signed integers overflows 
 - Thus the specific behavior (crashing, returning a nonsense value, etc.) can vary from system to system; programs are officially "illegal" after an overflow 
-- The "correct" approach when writing code that might overflow is to check _before_ performing the arithmetic operation (see References below)
+- The "correct" approach when writing code that might overflow is to check __before__ performing the arithmetic operation (see References below)
 - We are doing it anyway for demonstration purposes, because we know how the server's system and gcc will handle the overflow!
 
 
@@ -30,7 +31,12 @@ You will only need to edit `check_overflow.c`.
 
 ## Your Tasks
 
-## Task 1: Checking the unsigned addition overflow detector
+### First Steps
+- As always, add your name in a comment at the top of each file you edit!
+- Read through all the files, including the header and Makefile to be sure you
+understand the context of what you are doing. 
+
+### Task 1: Checking the unsigned addition overflow detector
 
 - Examine the code that checks for unsigned integer addition overflow (`check_unsigned_add`
 and `uadd_ok`); make sense of what both are doing and how they work
@@ -38,7 +44,7 @@ and `uadd_ok`); make sense of what both are doing and how they work
 the result returned by `uadd_ok` is correct or not: 1 for true, 0 for false
 - Do the test calls adequately test the detector function?
 
-## Task 2: Checking the signed addition overflow detector
+### Task 2: Checking the signed addition overflow detector
 
 - Examine the code that checks for signed integer addition overflow (`check_signed_add`
 and `sadd_ok`); make sense of what both are doing and how they work
@@ -46,7 +52,7 @@ and `sadd_ok`); make sense of what both are doing and how they work
 the result returned by `sadd_ok` is correct or not: 1 for true, 0 for false
 - Do the test calls adequately test the detector function?
 
-## Task 3: Creating and testing an unsigned subtraction overflow detector
+### Task 3: Creating and testing an unsigned subtraction overflow detector
 
 The code file contains a stub definition of `usub_ok` and its testing function,
 `check_unsigned_subtr`. Your task will be to complete the definition of `usub_ok`
@@ -56,7 +62,7 @@ with subtraction of unsigned (non-negative) integer?
 - Implement `usub_ok` to return 1 if there is no overflow, and 0 if there is
 - Write at least 5 tests in the test function!
 
-# Task 4: Creating/debugging and testing a signed subtraction overflow detector
+### Task 4: Creating/debugging and testing a signed subtraction overflow detector
 
 The code file contains a stub definition of `ssub_ok` and its testing function,
 `check_signed_subtr`. The definition uses the trick of negating the second number and
@@ -71,7 +77,7 @@ of `ssub_ok`. Find cases where the starting definition returns the wrong value
 
 ## References
 
-- Detecting overflow in C (methods and pitfalls
+- Detecting overflow in C (methods and pitfalls)
   -  [Detecting signed overflow in C/C++](https://stackoverflow.com/questions/3944505/detecting-signed-overflow-in-c-c)
   - [How do I detect unsigned integer overflow?](https://stackoverflow.com/questions/199333/how-do-i-detect-unsigned-integer-overflow)
 - General C syntax help
