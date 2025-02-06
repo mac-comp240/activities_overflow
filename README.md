@@ -83,5 +83,5 @@ of `ssub_ok`. Find cases where the starting definition returns the wrong value
 - General C syntax help
   - [Chapter 1 of _Dive into Systems_](https://diveintosystems.org/book/C1-C_intro/index.html)
   - _The C Programming Language_, often just known as K&R for Kernighan and Ritchie
-  - _C: A Reference Manual_, by Harbitson and Steele
+  - _C: A Reference Manual_, by Harbison and Steele
 
